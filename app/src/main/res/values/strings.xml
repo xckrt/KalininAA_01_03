@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string-array name="spinner">
+        <item>1-о комнатная квартира</item>
+        <item>2-х комнатная квартира</item>
+        <item>3-х комнатная квартира</item>
+        <item>Студия</item>
+    </string-array>
+</resources>

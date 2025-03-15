@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".raschet">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/arr"
+        android:onClick="back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Расчет площади"
+        android:textStyle="bold"
+        android:textColor="#F461DD"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="519dp"
+        android:background="#59E1FF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797">
+        <TextView
+            android:id="@+id/textspin"
+            android:layout_width="373dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Выбор"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:background="@drawable/spinner"
+            android:layout_gravity="center_horizontal"/>
+    <Spinner
+    android:layout_marginTop="11dp"
+    android:id="@+id/spinner"
+        android:entries="@array/spinner"
+    android:background="@drawable/spinner"
+    android:textAlignment="center"
+    android:layout_width="376dp"
+    android:layout_height="73dp"
+    android:layout_gravity="center_horizontal"/>
+<EditText
+    android:id="@+id/metr"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/edittext"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    android:hint="Введите количество метров"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="#1750e0"
+            android:onClick="raschit"
+            android:text="Рассчитать"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/rez"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="результат"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@drawable/edittext"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
